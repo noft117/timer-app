@@ -1,0 +1,45 @@
+<% include partials/header %>
+<div class='jumbotron'>
+    <ul class='float-left' id="laps"></ul> 
+    <p class="float-right"id='image'>
+    <h1 id='timer'>
+        <time>00:00:00.00</time>
+         
+        
+    </h1>
+                    
+    <div class='d-flex justify-content-center'>
+        <div class="btn-group" role="group" aria-label="Timer Buttons">
+        <button class="btn btn-lg  btn-success" id="start">start</button>
+        <button class="btn btn-lg  btn-warning" id="stop">stop</button>
+       
+        <button class="btn btn-lg  btn-danger" id="clear">clear</button> 
+        <button class="btn btn-lg  btn-info" id="lap">Lap</button> 
+        </div>
+    </div>
+</div>
+
+
+                 
+   
+
+<script type="application/javascript">
+           
+var h1 = document.getElementsByTagName('h1')[0],
+        start = document.getElementById('start'),
+        stop = document.getElementById('stop'),
+        clear = document.getElementById('clear'),
+        milliseconds = 0, seconds = 0, minutes = 0, hours = 0,
+        t;
+    var Lap = document.getElementById('lap');
+    var Laps = document.getElementById('laps');
+    var lastLap = {   hours: 0, minutes: 0, seconds: 0, milliseconds: 0 };
+    
+    /* ====================================================================== */ 
+    /* ======================================================================*/ 
+    /* ===================================================================== */ 
+    </script>
+        
+
+
+<% include partials/footer %>
